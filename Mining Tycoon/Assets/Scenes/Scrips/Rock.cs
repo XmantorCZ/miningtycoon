@@ -7,8 +7,6 @@ public class Rock : MonoBehaviour
 {
 
     public int genChance;
-    public static int Stats;
-    public GameObject StatBra;
     public GameObject CoalAnimat;
     public GameObject IronAnimat;
     public GameObject GoldAnimat;
@@ -18,9 +16,8 @@ public class Rock : MonoBehaviour
 
     public void ClickTheButton()
     {
+        GlobalClicks.ClicksCount += 1;
         genChance = Random.Range(1, 100);
-        Stats += 1;
-        StatBra.GetComponent<Text>().text = "" + Stats;
         if(genChance < 40)
         {
 

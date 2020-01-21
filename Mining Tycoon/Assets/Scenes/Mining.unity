@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 319585904}
   - component: {fileID: 319585903}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Save&Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,7 +432,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 319585904}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1171778758}
+        m_MethodName: SaveTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &319585904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,6 +736,7 @@ GameObject:
   - component: {fileID: 678190991}
   - component: {fileID: 678190995}
   - component: {fileID: 678190996}
+  - component: {fileID: 678190997}
   m_Layer: 0
   m_Name: MechanicsObject
   m_TagString: Untagged
@@ -815,6 +827,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CopperDisplay: {fileID: 977235159}
+  InternalCount: 0
+--- !u!114 &678190997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678190990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb54db236daf0b43ab86fec27c61d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatsDisplay: {fileID: 1304229734}
   InternalCount: 0
 --- !u!1 &764657166
 GameObject:
@@ -1711,6 +1737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171778757}
   - component: {fileID: 1171778756}
+  - component: {fileID: 1171778758}
   m_Layer: 0
   m_Name: ButtonObject
   m_TagString: Untagged
@@ -1731,7 +1758,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genChance: 0
-  StatBra: {fileID: 1304229734}
   CoalAnimat: {fileID: 1769834716}
   IronAnimat: {fileID: 1139405113}
   GoldAnimat: {fileID: 1891466068}
@@ -1751,6 +1777,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1171778758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171778755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a635f9a2330504a824e1ce393a769f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1246536984
 GameObject:
   m_ObjectHideFlags: 0

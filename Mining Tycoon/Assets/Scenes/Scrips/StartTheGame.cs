@@ -5,14 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartTheGame : MonoBehaviour
 {
-    
 
-    public int savedStats;
-    public int savedCoal;
-    public int savedCopper;
-    public int savedIron;
-    public int savedSilver;
-    public int savedGold;
     public static int over;
 
     public void NewGame()
@@ -26,34 +19,10 @@ public class StartTheGame : MonoBehaviour
         GlobalGold.GoldCount = 0;
 
         SceneManager.LoadScene(2);
+
     }
-    public void LoadGame()
-    {
-        if (over == 1) { 
-        savedStats = PlayerPrefs.GetInt("SavedClicks");
-        GlobalClicks.ClicksCount = savedStats;
-
-        savedCoal = PlayerPrefs.GetInt("SavedCoal");
-        GlobalCoal.CoalCount = savedCoal;
-
-        savedCopper = PlayerPrefs.GetInt("SavedCopper");
-        GlobalCopper.CopperCount = savedCopper;
-
-        savedIron = PlayerPrefs.GetInt("SavedIron");
-        GlobalIron.IronCount = savedIron;
-
-        savedSilver = PlayerPrefs.GetInt("SavedSilver");
-        GlobalSilver.SilverCount = savedSilver;
-
-        savedGold = PlayerPrefs.GetInt("SavedGold");
-        GlobalGold.GoldCount = savedGold;
-
-        SceneManager.LoadScene(1);
-    }if(over != 1)
-        {
-
-        }
-    }
-
 }
+    
+    
+
 

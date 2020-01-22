@@ -10,6 +10,12 @@ public class SaveGame : MonoBehaviour
     
     public void SaveTheGame()
     {
+        PlayerPrefs.SetInt("OverSound", SetVolume.Soundover);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetFloat("Volume", SetVolume.musicVolume);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("Over", StartTheGame.over);
+        PlayerPrefs.Save();
         PlayerPrefs.SetInt("SavedClicks", GlobalClicks.ClicksCount);
         PlayerPrefs.Save();
         PlayerPrefs.SetInt("SavedCoal", GlobalCoal.CoalCount);

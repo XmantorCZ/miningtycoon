@@ -16,7 +16,7 @@ public class LoadingScreen : MonoBehaviour
         
         IEnumerator Waiting()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
             SceneManager.LoadScene(1);
         }
 

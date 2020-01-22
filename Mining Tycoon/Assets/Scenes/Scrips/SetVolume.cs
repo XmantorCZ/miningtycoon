@@ -2,27 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class SetVolume : MonoBehaviour
 {
-    private AudioSource audioSrc; 
+    
+    private AudioSource audioSrc;
     public static float musicVolume;
+    public static int Soundover;
+    public Slider SliderVolume;
+    public Toggle Tlacitko;
+    public int Muted;
+    
     void Start()
     {
-        
-        musicVolume = 0.5f;
-        audioSrc = GetComponent<AudioSource>();
+        Soundover = PlayerPrefs.GetInt("OverSound");
+        if (Soundover != 1)
+        {
+            musicVolume = 0.5f;
+        }
+        if (Soundover == 1)
+        {
+            musicVolume = PlayerPrefs.GetFloat("Volume");
+        }
+    
+    SliderVolume.value = musicVolume;
+    audioSrc = GetComponent<AudioSource>();
     }
+
     void Update()
     {
-        PlayerPrefs.GetFloat("Volume", musicVolume);
-
-        audioSrc.volume = musicVolume;
-
+        
+            audioSrc.volume = musicVolume;
+        
     }
     public void SetVolumeMusic(float vol)
     {
-        musicVolume = vol;
-        PlayerPrefs.SetFloat("Volume", musicVolume);
+
+        
+        musicVolume = vol;    
+        Soundover = 1;
+
+        }
+
+    public void Mute()
+    {
+        
+            musicVolume = 0;
+            SliderVolume.value = 0;
+           
+        }
     }
-}
+
+    
+
+
+
+

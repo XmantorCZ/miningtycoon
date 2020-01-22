@@ -12,10 +12,11 @@ public class Rock : MonoBehaviour
     public GameObject GoldAnimat;
     public GameObject CopperAnimat;
     public GameObject SilverAnimat;
-
+    public int r;
 
     public void ClickTheButton()
     {
+        Input.GetKeyDown("space");
         GlobalClicks.ClicksCount += 1;
         genChance = Random.Range(1, 100);
         if(genChance < 40)

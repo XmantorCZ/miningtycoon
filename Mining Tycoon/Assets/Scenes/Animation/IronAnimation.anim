@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 10
+        value: 15
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -68,7 +68,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 491
+        value: 402
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -77,9 +77,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 338
-        inSlope: -1636
-        outSlope: -1636
+        value: 286
+        inSlope: -1280
+        outSlope: -1280
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -87,8 +87,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.25
         value: 82
-        inSlope: -1312
-        outSlope: -1312
+        inSlope: -1144
+        outSlope: -1144
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -181,7 +181,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 10
+        value: 15
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -227,7 +227,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 491
+        value: 402
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -236,9 +236,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.083333336
-        value: 338
-        inSlope: -1636
-        outSlope: -1636
+        value: 286
+        inSlope: -1280
+        outSlope: -1280
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -246,8 +246,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.25
         value: 82
-        inSlope: -1312
-        outSlope: -1312
+        inSlope: -1144
+        outSlope: -1144
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334

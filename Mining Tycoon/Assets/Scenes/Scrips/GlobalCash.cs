@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GlobalCash : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Cash;
+    public static float CountCash;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Cash.GetComponent<Text>().text = "" + CountCash;   
     }
 }

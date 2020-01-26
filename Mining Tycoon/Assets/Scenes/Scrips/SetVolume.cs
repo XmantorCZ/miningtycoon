@@ -11,7 +11,6 @@ public class SetVolume : MonoBehaviour
     public static float musicVolume;
     public static int Soundover;
     public Slider SliderVolume;
-    public Toggle Tlacitko;
     public int Muted;
     
     void Start()

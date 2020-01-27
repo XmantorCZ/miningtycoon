@@ -48,21 +48,17 @@ public class CopperSellButton : MonoBehaviour
         CopperProcenta.SetActive(true);
         CopperSekundy.SetActive(true);
         CopperProcenta.GetComponent<Text>().text = "0%";
-        CopperSekundy.GetComponent<Text>().text = "" + Coppera;
+        CopperSekundy.GetComponent<Text>().text = "" + Coppera + "s";
     yield return new WaitForSeconds(Copperb);
         CopperProcenta.GetComponent<Text>().text = "25%";
-        Coppera = Coppera - Copperb;
-        CopperSekundy.GetComponent<Text>().text = "" + Coppera;
+        CopperSekundy.GetComponent<Text>().text = "" + Coppera + "s";
     yield return new WaitForSeconds(Copperb);
         CopperProcenta.GetComponent<Text>().text = "50%";
-        Coppera = Coppera - Copperb;
-        CopperSekundy.GetComponent<Text>().text = "" + Coppera;
+        CopperSekundy.GetComponent<Text>().text = "" + Coppera + "s";
     yield return new WaitForSeconds(Copperb);
         CopperProcenta.GetComponent<Text>().text = "75%";
-        Coppera = Coppera - Copperb;
-        CopperSekundy.GetComponent<Text>().text = "" + Coppera;
+        CopperSekundy.GetComponent<Text>().text = "" + Coppera + "s";
     yield return new WaitForSeconds(Copperb);
-        CopperSekundy.GetComponent<Text>().text = "0";
         CopperProcenta.GetComponent<Text>().text = "100%";
 
     GlobalCash.CountCash += CopperMainPrice.CopperPrize;

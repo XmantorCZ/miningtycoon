@@ -44,25 +44,19 @@ public class CoalSellButton : MonoBehaviour
 
     public IEnumerator Cas()
 {
+
     Button.SetActive(false);
     Procenta.SetActive(true);
     Sekundy.SetActive(true);
     Procenta.GetComponent<Text>().text = "0%";
-    Sekundy.GetComponent<Text>().text = "" + a;
+    Sekundy.GetComponent<Text>().text = "" + a + "s";
     yield return new WaitForSeconds(b);
     Procenta.GetComponent<Text>().text = "25%";
-    a = a - b;
-    Sekundy.GetComponent<Text>().text = "" + a;
     yield return new WaitForSeconds(b);
     Procenta.GetComponent<Text>().text = "50%";
-    a = a - b;
-    Sekundy.GetComponent<Text>().text = "" + a;
     yield return new WaitForSeconds(b);
     Procenta.GetComponent<Text>().text = "75%";
-    a = a - b;
-    Sekundy.GetComponent<Text>().text = "" + a;
     yield return new WaitForSeconds(b);
-    Sekundy.GetComponent<Text>().text = "0";
     Procenta.GetComponent<Text>().text = "100%";
 
     GlobalCash.CountCash += CoalMainPrice.Prize;

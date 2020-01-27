@@ -7,6 +7,7 @@ public class CoalMainPrice : MonoBehaviour
 {
     public GameObject CoalMoney;
     public static float Prize;
+    private float DublPrice;
     
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,9 @@ public class CoalMainPrice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Prize = CoalSlider.CoalSliderValue * PriceforCoal.genCoal;
-        CoalMoney.GetComponent<Text>().text = "$" + Prize;
+        Prize = CoalSlider.CoalSliderValue * PriceforCoal.genCoal;   
+            CoalMoney.GetComponent<Text>().text = "$" + Prize;
+     
+        }
     }
-}
+

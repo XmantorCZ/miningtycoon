@@ -150,7 +150,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 778337289}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1293,7 +1293,7 @@ RectTransform:
   m_Children:
   - {fileID: 43754554}
   m_Father: {fileID: 778337289}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2526,7 +2526,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 778337289}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2756,7 +2756,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833291205}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2927,7 +2927,6 @@ GameObject:
   - component: {fileID: 628609215}
   - component: {fileID: 628609218}
   - component: {fileID: 628609217}
-  - component: {fileID: 628609216}
   - component: {fileID: 628609219}
   - component: {fileID: 628609222}
   - component: {fileID: 628609221}
@@ -2964,22 +2963,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1, y: -36.5}
   m_SizeDelta: {x: -130.7, y: -231.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &628609216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628609214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106279310526ff945b602c2090b34327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoalPrice: {fileID: 1868885052}
-  CoalGrow: 0
-  CoalZajemText: {fileID: 2069419702}
-  smyc: 0
 --- !u!114 &628609217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3891,9 +3874,9 @@ RectTransform:
   - {fileID: 390013663}
   - {fileID: 842910367}
   - {fileID: 928562689}
-  - {fileID: 334289516}
   - {fileID: 553742388}
   - {fileID: 33831880}
+  - {fileID: 334289516}
   m_Father: {fileID: 628609215}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6506,7 +6489,7 @@ RectTransform:
   m_Children:
   - {fileID: 519384324}
   m_Father: {fileID: 1833291205}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7566,6 +7549,7 @@ GameObject:
   - component: {fileID: 1833291209}
   - component: {fileID: 1833291210}
   - component: {fileID: 1833291211}
+  - component: {fileID: 1833291208}
   m_Layer: 0
   m_Name: Coal
   m_TagString: Untagged
@@ -7589,9 +7573,9 @@ RectTransform:
   - {fileID: 1611037343}
   - {fileID: 2069419703}
   - {fileID: 549267831}
-  - {fileID: 1517348896}
   - {fileID: 585053703}
   - {fileID: 1841438127}
+  - {fileID: 1517348896}
   m_Father: {fileID: 628609215}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7636,6 +7620,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833291204}
   m_CullTransparentMesh: 0
+--- !u!114 &1833291208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833291204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106279310526ff945b602c2090b34327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoalPrice: {fileID: 1868885052}
+  CoalGrow: 0
+  CoalZajemText: {fileID: 2069419702}
+  smyc: 0
 --- !u!114 &1833291209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7708,7 +7708,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833291205}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
